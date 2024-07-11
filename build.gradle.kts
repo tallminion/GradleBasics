@@ -1,5 +1,6 @@
 plugins {
-    id("java")
+    id("java-library")
+    id("com.github.johnrengelman.shadow") version "8.1.1"
 }
 
 group = "org.example"
@@ -22,6 +23,8 @@ tasks.jar {
         )
     }
 }
+
+
 
 tasks.test {
     useJUnitPlatform()
