@@ -47,4 +47,9 @@ public class Todo {
     public int getUserId() {
         return userId;
     }
+
+    @Override
+    public String toString(){
+        return "Title: " + this.title+ " , Id: " +this.id+" , Completed: "+ this.completed;
+    }
 }
