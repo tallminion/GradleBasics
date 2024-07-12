@@ -11,16 +11,17 @@ import java.io.IOException;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        OkHttpClient client = new OkHttpClient();
-        String url = "https://fakestoreapi.com/products/1";
-        Request request = new Request.Builder()
-                .url(url)
-                .build();
-        try (Response response = client.newCall(request).execute()) {
-            if (!response.isSuccessful()) System.out.println("something went wrong!!!");
-            System.out.println(response.body().string());
-        } catch (IOException ex){
-            ex.printStackTrace();
-        }
+        System.out.println("hello");
+//        OkHttpClient client = new OkHttpClient();
+//        String url = "https://fakestoreapi.com/products/1";
+//        Request request = new Request.Builder()
+//                .url(url)
+//                .build();
+//        try (Response response = client.newCall(request).execute()) {
+//            if (!response.isSuccessful()) System.out.println("something went wrong!!!");
+//            System.out.println(response.body().string());
+//        } catch (IOException ex){
+//            ex.printStackTrace();
+//        }
     }
 }
